@@ -16,46 +16,32 @@ body {
 
 header {
     background: #18222c;
-    color: white;
     text-align: center;
-    padding: 45px 20px;
-}
-
-header h1 {
-    font-size: 58px;
-    margin: 0;
-    letter-spacing: 4px;
-}
-
-header p {
-    font-size: 20px;
-    margin-top: 10px;
 }
 
 header img {
     display: block;
-    max-width: 420px;
-    width: 90%;
+    width: 100%;
+    max-width: 1600px;
     height: auto;
-    margin: 25px auto 0;
-    border-radius: 15px;
+    margin: auto;
 }
 
 nav {
     background: #263747;
     text-align: center;
-    padding: 15px;
+    padding: 16px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 18px;
+    margin: 0 14px;
     font-weight: bold;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 35px 20px;
 }
@@ -64,7 +50,7 @@ nav a {
     background: white;
     padding: 30px;
     border-radius: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 h2 {
@@ -73,13 +59,13 @@ h2 {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
 }
 
 .card {
     background: white;
-    padding: 25px;
+    padding: 22px;
     border-radius: 8px;
     border-top: 5px solid #c88b22;
 }
@@ -94,40 +80,36 @@ h2 {
     text-decoration: none;
 }
 
-.biblioteca {
-    margin-top: 50px;
+.categoria {
+    margin-top: 45px;
     background: white;
-    padding: 30px;
+    padding: 28px;
     border-radius: 8px;
 }
 
-.material {
+.lista-pdfs {
+    margin-top: 20px;
+}
+
+.pdf-item {
+    padding: 15px 0;
     border-top: 1px solid #ddd;
-    padding: 25px 0;
 }
 
-.material h3 {
-    margin-bottom: 8px;
-    color: #18222c;
-}
-
-.material p {
-    line-height: 1.6;
-}
-
-.botao-pdf {
-    display: inline-block;
-    background: #c88b22;
-    color: white !important;
-    padding: 12px 20px;
-    border-radius: 6px;
+.pdf-item a {
+    color: #9b6713;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 8px;
+    font-size: 18px;
 }
 
-.botao-pdf:hover {
-    background: #9b6713;
+.pdf-item a:hover {
+    text-decoration: underline;
+}
+
+.aviso {
+    color: #666;
+    font-style: italic;
 }
 
 footer {
@@ -138,8 +120,11 @@ footer {
     padding: 25px;
 }
 
-.callsign {
-    color: #e6a632;
+@media (max-width: 700px) {
+    nav a {
+        display: inline-block;
+        margin: 7px 8px;
+    }
 }
 </style>
 </head>
@@ -147,19 +132,17 @@ footer {
 <body>
 
 <header>
-    <h1>6146<span class="callsign">AM</span></h1>
-    <p>Radioamadorismo • Eletrônica • RF • Montagens</p>
-
-    <img src="IMAGEM%20IMAGEM.png"
-         alt="6146AM - Radioamadorismo">
+    <img src="IMAGEM%20IMAGEM.png" alt="6146AM">
 </header>
+
 <nav>
     <a href="#inicio">Início</a>
     <a href="#transmissores">Transmissores</a>
+    <a href="#receptores">Receptores</a>
     <a href="#amplificadores">Amplificadores</a>
     <a href="#antenas">Antenas</a>
-    <a href="#biblioteca">Biblioteca</a>
-    <a href="#videos">Vídeos</a>
+    <a href="#valvulas">Válvulas</a>
+    <a href="#manuais">Manuais</a>
 </nav>
 
 <div class="container">
@@ -169,95 +152,109 @@ footer {
 
         <p>
         Este espaço foi criado para compartilhar experiências,
-        esquemas, projetos e informações sobre radioamadorismo
-        e eletrônica de radiofrequência.
+        esquemas, projetos, manuais e documentos técnicos sobre
+        radioamadorismo e eletrônica de radiofrequência.
         </p>
 
         <p>
-        Aqui serão reunidos circuitos, montagens, manuais,
-        documentos técnicos, PDFs e vídeos destinados aos
-        radioamadores que gostam de construir, experimentar
-        e aprender.
+        Os documentos são organizados por assunto. Novos PDFs
+        adicionados às pastas do repositório aparecem automaticamente
+        nesta biblioteca.
         </p>
     </div>
 
-    <h2>Conteúdo</h2>
+    <h2>Biblioteca 6146AM</h2>
 
     <div class="cards">
 
-        <div class="card" id="transmissores">
+        <div class="card">
             <h3>📻 Transmissores</h3>
-            <p>Projetos, esquemas e experiências com transmissores AM.</p>
-            <a href="#">Ver projetos →</a>
+            <p>Transmissores AM, excitadores e circuitos de RF.</p>
+            <a href="#transmissores">Abrir →</a>
         </div>
 
-        <div class="card" id="amplificadores">
+        <div class="card">
+            <h3>🎧 Receptores</h3>
+            <p>Receptores, conversão direta, regenerativos e outros.</p>
+            <a href="#receptores">Abrir →</a>
+        </div>
+
+        <div class="card">
             <h3>🔥 Amplificadores</h3>
-            <p>Amplificadores lineares valvulados e transistorizados.</p>
-            <a href="#">Ver projetos →</a>
+            <p>Amplificadores valvulados e transistorizados.</p>
+            <a href="#amplificadores">Abrir →</a>
         </div>
 
-        <div class="card" id="antenas">
+        <div class="card">
             <h3>📡 Antenas</h3>
-            <p>Antenas, acopladores, baluns e experiências de RF.</p>
-            <a href="#">Ver projetos →</a>
+            <p>Antenas, acopladores, baluns e casamento.</p>
+            <a href="#antenas">Abrir →</a>
         </div>
 
         <div class="card">
-            <h3>📚 Biblioteca</h3>
-            <p>Esquemas, manuais, artigos e documentos em PDF.</p>
-            <a href="#biblioteca">Abrir biblioteca →</a>
-        </div>
-
-        <div class="card" id="videos">
-            <h3>🎥 Vídeos</h3>
-            <p>Vídeos sobre montagens, ajustes e experiências.</p>
-            <a href="#">Assistir →</a>
+            <h3>💡 Válvulas</h3>
+            <p>Datasheets, circuitos e informações sobre válvulas.</p>
+            <a href="#valvulas">Abrir →</a>
         </div>
 
         <div class="card">
-            <h3>🔧 Bancada</h3>
-            <p>Dicas práticas, componentes, válvulas e instrumentação.</p>
-            <a href="#">Ver dicas →</a>
+            <h3>🔧 Instrumentação</h3>
+            <p>Medidores, analisadores e equipamentos de bancada.</p>
+            <a href="#instrumentacao">Abrir →</a>
+        </div>
+
+        <div class="card">
+            <h3>📘 Manuais</h3>
+            <p>Manuais técnicos e documentação de equipamentos.</p>
+            <a href="#manuais">Abrir →</a>
+        </div>
+
+        <div class="card">
+            <h3>📚 Outros</h3>
+            <p>Materiais que não se enquadram nas demais categorias.</p>
+            <a href="#outros">Abrir →</a>
         </div>
 
     </div>
 
-    <div class="biblioteca" id="biblioteca">
+    <div class="categoria" id="transmissores">
+        <h2>📻 Transmissores</h2>
+        <div class="lista-pdfs" data-pasta="transmissores"></div>
+    </div>
 
-        <h2>📚 Biblioteca Técnica 6146AM</h2>
+    <div class="categoria" id="receptores">
+        <h2>🎧 Receptores</h2>
+        <div class="lista-pdfs" data-pasta="receptores"></div>
+    </div>
 
-        <p>
-        Nesta seção estão disponíveis artigos, esquemas,
-        manuais e documentos técnicos relacionados ao
-        radioamadorismo e à eletrônica de radiofrequência.
-        </p>
+    <div class="categoria" id="amplificadores">
+        <h2>🔥 Amplificadores</h2>
+        <div class="lista-pdfs" data-pasta="amplificadores"></div>
+    </div>
 
-        <div class="material">
+    <div class="categoria" id="antenas">
+        <h2>📡 Antenas</h2>
+        <div class="lista-pdfs" data-pasta="antenas"></div>
+    </div>
 
-            <h3>ARRL Radio Designer — Exploring RF (1995)</h3>
+    <div class="categoria" id="valvulas">
+        <h2>💡 Válvulas</h2>
+        <div class="lista-pdfs" data-pasta="valvulas"></div>
+    </div>
 
-            <p>
-            <strong>Autor:</strong> David Newkirk, WJ1Z<br>
-            <strong>Publicação:</strong> Revista QST / ARRL
-            </p>
+    <div class="categoria" id="instrumentacao">
+        <h2>🔧 Instrumentação</h2>
+        <div class="lista-pdfs" data-pasta="instrumentacao"></div>
+    </div>
 
-            <p>
-            Coletânea de artigos técnicos da série
-            <em>Exploring RF</em>, publicada em 1995.
-            O material aborda análise e simulação de circuitos
-            de radiofrequência, redes de sintonia, impedâncias,
-            casamento para 50 ohms e outros conceitos de RF.
-            </p>
+    <div class="categoria" id="manuais">
+        <h2>📘 Manuais</h2>
+        <div class="lista-pdfs" data-pasta="manuais"></div>
+    </div>
 
-            <a class="botao-pdf"
-               href="ARRL%20Radio%20Designer%20(%20PDFDrive%20).pdf"
-               target="_blank">
-               📄 Abrir PDF
-            </a>
-
-        </div>
-
+    <div class="categoria" id="outros">
+        <h2>📚 Outros</h2>
+        <div class="lista-pdfs" data-pasta="outros"></div>
     </div>
 
 </div>
@@ -266,6 +263,82 @@ footer {
     <strong>6146AM</strong><br>
     Radioamadorismo, experimentação e amizade.
 </footer>
+
+<script>
+
+const usuario = "magiroto";
+const repositorio = "6146am";
+
+async function carregarPDFs(elemento) {
+
+    const pasta = elemento.dataset.pasta;
+
+    const url =
+        `https://api.github.com/repos/${usuario}/${repositorio}/contents/${pasta}`;
+
+    elemento.innerHTML = '<p class="aviso">Carregando documentos...</p>';
+
+    try {
+
+        const resposta = await fetch(url);
+
+        if (!resposta.ok) {
+            elemento.innerHTML =
+                '<p class="aviso">Nenhum PDF disponível nesta categoria.</p>';
+            return;
+        }
+
+        const arquivos = await resposta.json();
+
+        const pdfs = arquivos
+            .filter(arquivo =>
+                arquivo.type === "file" &&
+                arquivo.name.toLowerCase().endsWith(".pdf")
+            )
+            .sort((a, b) =>
+                a.name.localeCompare(b.name, "pt-BR")
+            );
+
+        if (pdfs.length === 0) {
+            elemento.innerHTML =
+                '<p class="aviso">Nenhum PDF disponível nesta categoria.</p>';
+            return;
+        }
+
+        elemento.innerHTML = "";
+
+        pdfs.forEach(pdf => {
+
+            const item = document.createElement("div");
+            item.className = "pdf-item";
+
+            const link = document.createElement("a");
+
+            link.href = pdf.download_url;
+            link.target = "_blank";
+
+            const nome =
+                pdf.name.replace(/\.pdf$/i, "");
+
+            link.textContent = "📄 " + nome;
+
+            item.appendChild(link);
+            elemento.appendChild(item);
+
+        });
+
+    } catch (erro) {
+
+        elemento.innerHTML =
+            '<p class="aviso">Não foi possível carregar os documentos.</p>';
+
+    }
+}
+
+document.querySelectorAll(".lista-pdfs")
+    .forEach(carregarPDFs);
+
+</script>
 
 </body>
 </html>
