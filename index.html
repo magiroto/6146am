@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>6146AM - Radioamadorismo e Montagens</title>
+<title>6146AM - Radioamadorismo</title>
 
 <style>
 body {
@@ -16,41 +16,37 @@ body {
 
 header {
     background: #18222c;
-    text-align: center;
 }
 
 header img {
     display: block;
     width: 100%;
-    max-width: 1600px;
     height: auto;
-    margin: auto;
 }
 
 nav {
     background: #263747;
     text-align: center;
-    padding: 16px;
+    padding: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 14px;
+    margin: 0 12px;
     font-weight: bold;
 }
 
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 35px 20px;
+    padding: 30px 20px;
 }
 
 .intro {
     background: white;
-    padding: 30px;
+    padding: 25px;
     border-radius: 8px;
-    margin-bottom: 35px;
 }
 
 h2 {
@@ -61,13 +57,14 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     gap: 18px;
+    margin-top: 30px;
 }
 
 .card {
     background: white;
-    padding: 22px;
     border-radius: 8px;
     border-top: 5px solid #c88b22;
+    padding: 22px;
 }
 
 .card h3 {
@@ -82,33 +79,32 @@ h2 {
 
 .categoria {
     margin-top: 45px;
+    padding: 25px;
     background: white;
-    padding: 28px;
     border-radius: 8px;
 }
 
-.lista-pdfs {
-    margin-top: 20px;
-}
-
-.pdf-item {
-    padding: 15px 0;
+.arquivo {
     border-top: 1px solid #ddd;
+    padding: 15px 0;
 }
 
-.pdf-item a {
+.arquivo a {
     color: #9b6713;
-    text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    text-decoration: none;
 }
 
-.pdf-item a:hover {
-    text-decoration: underline;
+.miniatura {
+    max-width: 180px;
+    max-height: 130px;
+    display: block;
+    margin-top: 10px;
+    border-radius: 6px;
 }
 
-.aviso {
-    color: #666;
+.vazio {
+    color: #777;
     font-style: italic;
 }
 
@@ -123,7 +119,7 @@ footer {
 @media (max-width: 700px) {
     nav a {
         display: inline-block;
-        margin: 7px 8px;
+        margin: 7px;
     }
 }
 </style>
@@ -136,207 +132,229 @@ footer {
 </header>
 
 <nav>
-    <a href="#inicio">Início</a>
     <a href="#transmissores">Transmissores</a>
     <a href="#receptores">Receptores</a>
     <a href="#amplificadores">Amplificadores</a>
     <a href="#antenas">Antenas</a>
-    <a href="#valvulas">Válvulas</a>
+    <a href="#revistas">Revistas</a>
     <a href="#manuais">Manuais</a>
+    <a href="#bancada">Bancada</a>
 </nav>
 
 <div class="container">
 
-    <div class="intro" id="inicio">
-        <h2>Bem-vindo ao 6146AM</h2>
+<div class="intro">
+    <h2>Bem-vindo ao 6146AM</h2>
 
-        <p>
-        Este espaço foi criado para compartilhar experiências,
-        esquemas, projetos, manuais e documentos técnicos sobre
-        radioamadorismo e eletrônica de radiofrequência.
-        </p>
+    <p>
+    Biblioteca dedicada ao radioamadorismo, eletrônica,
+    radiofrequência, montagens e experimentação.
+    </p>
 
-        <p>
-        Os documentos são organizados por assunto. Novos PDFs
-        adicionados às pastas do repositório aparecem automaticamente
-        nesta biblioteca.
-        </p>
+    <p>
+    Os materiais são organizados por categorias.
+    Novos arquivos adicionados ao repositório aparecem
+    automaticamente nesta página.
+    </p>
+</div>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>📻 Transmissores</h3>
+        <a href="#transmissores">Abrir →</a>
     </div>
 
-    <h2>Biblioteca 6146AM</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>📻 Transmissores</h3>
-            <p>Transmissores AM, excitadores e circuitos de RF.</p>
-            <a href="#transmissores">Abrir →</a>
-        </div>
-
-        <div class="card">
-            <h3>🎧 Receptores</h3>
-            <p>Receptores, conversão direta, regenerativos e outros.</p>
-            <a href="#receptores">Abrir →</a>
-        </div>
-
-        <div class="card">
-            <h3>🔥 Amplificadores</h3>
-            <p>Amplificadores valvulados e transistorizados.</p>
-            <a href="#amplificadores">Abrir →</a>
-        </div>
-
-        <div class="card">
-            <h3>📡 Antenas</h3>
-            <p>Antenas, acopladores, baluns e casamento.</p>
-            <a href="#antenas">Abrir →</a>
-        </div>
-
-        <div class="card">
-            <h3>💡 Válvulas</h3>
-            <p>Datasheets, circuitos e informações sobre válvulas.</p>
-            <a href="#valvulas">Abrir →</a>
-        </div>
-
-        <div class="card">
-            <h3>🔧 Instrumentação</h3>
-            <p>Medidores, analisadores e equipamentos de bancada.</p>
-            <a href="#instrumentacao">Abrir →</a>
-        </div>
-
-        <div class="card">
-            <h3>📘 Manuais</h3>
-            <p>Manuais técnicos e documentação de equipamentos.</p>
-            <a href="#manuais">Abrir →</a>
-        </div>
-
-        <div class="card">
-            <h3>📚 Outros</h3>
-            <p>Materiais que não se enquadram nas demais categorias.</p>
-            <a href="#outros">Abrir →</a>
-        </div>
-
+    <div class="card">
+        <h3>🎧 Receptores</h3>
+        <a href="#receptores">Abrir →</a>
     </div>
 
-    <div class="categoria" id="transmissores">
-        <h2>📻 Transmissores</h2>
-        <div class="lista-pdfs" data-pasta="transmissores"></div>
+    <div class="card">
+        <h3>🔥 Amplificadores</h3>
+        <a href="#amplificadores">Abrir →</a>
     </div>
 
-    <div class="categoria" id="receptores">
-        <h2>🎧 Receptores</h2>
-        <div class="lista-pdfs" data-pasta="receptores"></div>
+    <div class="card">
+        <h3>📡 Antenas</h3>
+        <a href="#antenas">Abrir →</a>
     </div>
 
-    <div class="categoria" id="amplificadores">
-        <h2>🔥 Amplificadores</h2>
-        <div class="lista-pdfs" data-pasta="amplificadores"></div>
+    <div class="card">
+        <h3>📰 Revistas</h3>
+        <a href="#revistas">Abrir →</a>
     </div>
 
-    <div class="categoria" id="antenas">
-        <h2>📡 Antenas</h2>
-        <div class="lista-pdfs" data-pasta="antenas"></div>
+    <div class="card">
+        <h3>📘 Manuais</h3>
+        <a href="#manuais">Abrir →</a>
     </div>
 
-    <div class="categoria" id="valvulas">
-        <h2>💡 Válvulas</h2>
-        <div class="lista-pdfs" data-pasta="valvulas"></div>
-    </div>
-
-    <div class="categoria" id="instrumentacao">
-        <h2>🔧 Instrumentação</h2>
-        <div class="lista-pdfs" data-pasta="instrumentacao"></div>
-    </div>
-
-    <div class="categoria" id="manuais">
-        <h2>📘 Manuais</h2>
-        <div class="lista-pdfs" data-pasta="manuais"></div>
-    </div>
-
-    <div class="categoria" id="outros">
-        <h2>📚 Outros</h2>
-        <div class="lista-pdfs" data-pasta="outros"></div>
+    <div class="card">
+        <h3>🔧 Bancada</h3>
+        <a href="#bancada">Abrir →</a>
     </div>
 
 </div>
 
+<div class="categoria" id="transmissores">
+    <h2>📻 Transmissores</h2>
+    <div class="lista" data-pasta="transmissores"></div>
+</div>
+
+<div class="categoria" id="receptores">
+    <h2>🎧 Receptores</h2>
+    <div class="lista" data-pasta="receptores"></div>
+</div>
+
+<div class="categoria" id="amplificadores">
+    <h2>🔥 Amplificadores</h2>
+    <div class="lista" data-pasta="amplificadores"></div>
+</div>
+
+<div class="categoria" id="antenas">
+    <h2>📡 Antenas</h2>
+    <div class="lista" data-pasta="antenas"></div>
+</div>
+
+<div class="categoria" id="revistas">
+    <h2>📰 Revistas</h2>
+    <div class="lista" data-pasta="revistas"></div>
+</div>
+
+<div class="categoria" id="manuais">
+    <h2>📘 Manuais</h2>
+    <div class="lista" data-pasta="manuais"></div>
+</div>
+
+<div class="categoria" id="bancada">
+    <h2>🔧 Bancada</h2>
+    <div class="lista" data-pasta="bancada"></div>
+</div>
+
+</div>
+
 <footer>
-    <strong>6146AM</strong><br>
-    Radioamadorismo, experimentação e amizade.
+<strong>6146AM</strong><br>
+Radioamadorismo, experimentação e amizade.
 </footer>
 
 <script>
 
 const usuario = "magiroto";
 const repositorio = "6146am";
+const branch = "main";
 
-async function carregarPDFs(elemento) {
-
-    const pasta = elemento.dataset.pasta;
+async function carregarTudo() {
 
     const url =
-        `https://api.github.com/repos/${usuario}/${repositorio}/contents/${pasta}`;
-
-    elemento.innerHTML = '<p class="aviso">Carregando documentos...</p>';
+        `https://api.github.com/repos/${usuario}/${repositorio}/git/trees/${branch}?recursive=1`;
 
     try {
 
         const resposta = await fetch(url);
 
         if (!resposta.ok) {
-            elemento.innerHTML =
-                '<p class="aviso">Nenhum PDF disponível nesta categoria.</p>';
-            return;
+            throw new Error("Erro GitHub");
         }
 
-        const arquivos = await resposta.json();
+        const dados = await resposta.json();
 
-        const pdfs = arquivos
-            .filter(arquivo =>
-                arquivo.type === "file" &&
-                arquivo.name.toLowerCase().endsWith(".pdf")
-            )
-            .sort((a, b) =>
-                a.name.localeCompare(b.name, "pt-BR")
-            );
+        document.querySelectorAll(".lista").forEach(lista => {
 
-        if (pdfs.length === 0) {
-            elemento.innerHTML =
-                '<p class="aviso">Nenhum PDF disponível nesta categoria.</p>';
-            return;
-        }
+            const pasta = lista.dataset.pasta + "/";
 
-        elemento.innerHTML = "";
+            const arquivos = dados.tree
+                .filter(item =>
+                    item.type === "blob" &&
+                    item.path.startsWith(pasta) &&
+                    !item.path.toLowerCase().endsWith("leia-me.txt")
+                )
+                .sort((a, b) =>
+                    a.path.localeCompare(b.path, "pt-BR")
+                );
 
-        pdfs.forEach(pdf => {
+            if (arquivos.length === 0) {
 
-            const item = document.createElement("div");
-            item.className = "pdf-item";
+                lista.innerHTML =
+                    '<p class="vazio">Nenhum material nesta categoria.</p>';
 
-            const link = document.createElement("a");
+                return;
+            }
 
-            link.href = pdf.download_url;
-            link.target = "_blank";
+            lista.innerHTML = "";
 
-            const nome =
-                pdf.name.replace(/\.pdf$/i, "");
+            arquivos.forEach(arquivo => {
 
-            link.textContent = "📄 " + nome;
+                const nomeCompleto =
+                    arquivo.path.substring(pasta.length);
 
-            item.appendChild(link);
-            elemento.appendChild(item);
+                const caminho =
+                    encodeURI(arquivo.path);
+
+                const extensao =
+                    nomeCompleto.split(".").pop().toLowerCase();
+
+                const item =
+                    document.createElement("div");
+
+                item.className = "arquivo";
+
+                if (extensao === "pdf") {
+
+                    item.innerHTML =
+                        `<a href="${caminho}" target="_blank">
+                        📄 ${nomeCompleto}
+                        </a>`;
+
+                }
+
+                else if (
+                    extensao === "jpg" ||
+                    extensao === "jpeg" ||
+                    extensao === "png" ||
+                    extensao === "webp"
+                ) {
+
+                    item.innerHTML =
+                        `<a href="${caminho}" target="_blank">
+                        🖼️ ${nomeCompleto}
+                        </a>
+                        <img class="miniatura"
+                        src="${caminho}"
+                        alt="${nomeCompleto}">`;
+
+                }
+
+                else {
+
+                    item.innerHTML =
+                        `<a href="${caminho}" target="_blank">
+                        📁 ${nomeCompleto}
+                        </a>`;
+
+                }
+
+                lista.appendChild(item);
+
+            });
 
         });
 
-    } catch (erro) {
+    }
 
-        elemento.innerHTML =
-            '<p class="aviso">Não foi possível carregar os documentos.</p>';
+    catch (erro) {
+
+        document.querySelectorAll(".lista").forEach(lista => {
+            lista.innerHTML =
+                '<p class="vazio">Não foi possível carregar os arquivos.</p>';
+        });
 
     }
+
 }
 
-document.querySelectorAll(".lista-pdfs")
-    .forEach(carregarPDFs);
+carregarTudo();
 
 </script>
 
