@@ -1,0 +1,38 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1046{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\lang1046\cgrid \snext0 Normal;}{\*\cs10 \additive Default Paragraph Font;}{\s15\qc\nowidctlpar\widctlpar\adjustright \b\lang1046\cgrid \sbasedon0 \snext15 Title;}{\s16\nowidctlpar\widctlpar\adjustright \lang1046\cgrid \sbasedon0 \snext16 Body Text;}{\s17\nowidctlpar\widctlpar\tqc\tx4419\tqr\tx8838\adjustright \fs20\lang1046\cgrid \sbasedon0 \snext17 header;}{\*\cs18 \additive \sbasedon10 page number;}}{\info{\title Apostila básica sobre indutores}{\author .}{\operator .}{\creatim\yr2002\mo11\dy17\hr8\min14}{\revtim\yr2002\mo11\dy17\hr8\min14}{\printim\yr2002\mo11\dy16\hr14\min49}{\version2}{\edmins0}{\nofpages2}{\nofwords415}{\nofchars2368}{\*\company ..}{\nofcharsws0}{\vern73}}\margl1701\margr1701\margt1417\margb1417 \deftab708\widowctrl\ftnbj\aenddoc\hyphhotz425\hyphcaps0\formshade\viewkind1\viewscale75\pgbrdrhead\pgbrdrfoot \fet0\sectd \linex0\headery709\footery709\colsx709\endnhere\sectdefaultcl {\header \pard\plain \s17\nowidctlpar\widctlpar\tqc\tx4419\tqr\tx8838\pvpara\phmrg\posxr\posy0\adjustright \fs20\lang1046\cgrid {\field{\*\fldinst {\cs18 PAGE  }}{\fldrslt {\cs18\lang1024 1}}}{\cs18 
+\par }\pard \s17\ri360\nowidctlpar\widctlpar\tqc\tx4419\tqr\tx8838\adjustright {
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \s15\qc\nowidctlpar\widctlpar\adjustright \b\lang1046\cgrid {\fs28 Apostila básica sobre indutores
+\par }\pard\plain \qc\nowidctlpar\widctlpar\adjustright \fs20\lang1046\cgrid {\b\fs24 
+\par }\pard\plain \s16\nowidctlpar\widctlpar\adjustright \lang1046\cgrid {\b Indutores}{ - Nome dado a bobinas, choques, enfim a todos os tipos de enrolamentos. Um indutor nada mais é que uma \ldblquote grande\rdblquote  quantidade de fios enrolados sobre um núcleo. Este núcleo pode ser de ar, ferro, ferrite, etc. A teoria que envolve o uso e funcionamento dos indutores é que permite a construção de transformadores de tensão. 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang1046\cgrid {\fs24 Quando um enrolamento é percorrido por uma corrente ele cria um campo eletromagnético, se próximo a este indutor existir outro indutor este campo induzirá uma corrente no outro indutor. Quando a variação do campo acabar acabará também a indução. 
+\par Podemos perceber que se fizermos passar por um indutor uma  corrente contínua só induziremos em outro indutor enquanto a corrente chega ao seu valor normal.  Se quisermos induzirmos sempre precisamos de corrente alternada, é por isso que só usamos transformadores em corrente alternada.
+\par }{\b\fs24 Reatância indutiva e Indutância}{\fs24  \endash  As linhas de indução do campo eletromagnético criadas por uma bobina ou indutor, ao \ldblquote crescerem\rdblquote  cortam as suas próprias espiras ou voltas, desta forma até se criar o campo magnético em sua máxima amplitude teremos a indução de uma corrente, neste próprio indutor, oposta a corrente original. Por este motivo a corrente não pode crescer instantaneamente até o seu valor máximo, mas se passam alguns instantes até que isto aconteça. Para se estabelecer a corrente normal no circuito é necessário que seja vencida uma certa inércia que nele se manifesta,  esta oposição a circulação da corrente recebe o nome de reatância indutiva. 
+\par Todas as bobinas ou indutores oferecem um certa reatância indutiva. Esta reatância  será tanto maior quanto mais rápida for a variação da corrente pela bobina. Em outras palavras quanto maior a variação da corrente ou sua freqüência maior será a reatância indutiva  para um mesmo valor de indutor (com uma mesma indutância).
+\par 
+\par Em corrente alternada teremos sempre variada a direção da corrente pelo indutor, isto faz com que ele defase a corrente da tensão, ou seja , atrase a corrente que passa por ele em relação a tensão. Esta defasagem é conhecida como fator de potência.
+\par 
+\par Quando fazemos uma corrente passar por um indutor aparece sobre o mesmo, \ldblquote lentamente\rdblquote  um campo eletromagnético, quando retiramos a corrente este campo diminue e induz no próprio indutor uma tensão e corrente com sentido contrário ao anterior. Esta tensão contrária pode ser utilizada em certos circuitos ou deve ser eliminada em outros tipos de circuitos para evitar problemas aos componentes eletrônicos. A finalidade de um diodo em contrafase com a bobina de um relé é evitar que esta tensão prejudique o circuito.
+\par 
+\par Em tensão alternada podemos calcular a reatância capacitiva (que nada mais é que a dificuldade que o indutor oferece a circulação da corrente) através da seguinte equação:
+\par 
+\par XL = 2 x }{\f3\fs24\cgrid0 \'70}{\fs24  x F x L
+\par 
+\par Onde: 
+\par 
+\par }{\f3\fs24\cgrid0 \'70\'20\'3d\'20\'33\'2c\'31\'34\'31\'35\'31\'36
+\par }{\fs24 F = freqüência aplicada no indutor.
+\par L = valor da indutância
+\par 
+\par Podemos perceber que quanto maior a freqüência maior será a reatância indutiva.
+\par 
+\par 
+\par }{\b\fs24 Resumo: 
+\par }{\fs24 
+\par Indutor \endash  nome do componente.
+\par Indutância \endash  grandeza ou unidade de medida dada em Henries, mH, uH.
+\par Reatância indutiva \endash  resistência que um indutor oferece para a circulação de corrente (normalmente se relaciona isto com corrente alternada) alternada.
+\par 
+\par The End.
+\par 
+\par 
+\par http://www.luizbertini.net/download.html
+\par }}
